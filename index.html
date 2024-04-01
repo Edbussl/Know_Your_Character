@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="shortcut icon" href="./assets/img/capa.png" type="image/x-icon">
+        <script defer src="./assets/js/app.js"></script>
+        <title>KnowYourCharacter</title>
+    </head>
+
+<body>
+    <header class="header">
+        <img class="img-logo" src="./assets/img/capa.png" height="100px" alt="Logo_KYC"></img>
+        <nav class="header-menu" id="itemsMenu">
+            <a class="header-menu-item" href="#titulo01"></a>
+            <a class="header-menu-item" href="#titulo02"></a>
+            <a class="header-menu-item" href="#titulo03"></a>
+            <a class="header-menu-item" href="#titulo04"></a>
+            <a class="header-menu-item" href="#titulo05"><span class="text-decoration-contato">Contato</span></a>
+        </nav>
+        <img class="img-menu" src="./assets/imgs/icone-menu-white.png" alt="Ícone de Menu" onclick="clickMenu()">
+    </header>
+
+    <div class="container">
+        <div class="personagens">
+         <img height="200px" width="254px" src="./assets/img/personagens/Batman.jpg" alt="Batman">
+         <img height="200px" width="254px" src="./assets/img/personagens/DeadPool.jpg" alt="DeadPool">
+         <img height="200px" width="254px" src="./assets/img/personagens/DVader.jpg" alt="Darth Vader">
+         <img height="200px" width="254px" src="./assets/img/personagens/HAranha.jpg" alt="Homem-Aranha">
+         <img height="200px" width="254px" src="./assets/img/personagens/HSimpson.PNG" alt="Homer-Simpson">
+         <img height="200px" width="254px" src="./assets/img/personagens/Annabeth.PNG" alt="Annabeth">
+         <img height="200px" width="254px" src="./assets/img/personagens/Hermione.PNG" alt="Hermione">
+         <img height="200px" width="254px" src="./assets/img/personagens/Draven.PNG" alt="Draven">
+         <img height="200px" width="254px" src="./assets/img/personagens/Kakashi.PNG" alt="Kakashi">
+         <img height="200px" width="254px" src="./assets/img/personagens/Cartman.PNG" alt="Cartman">
+        </div>
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="buttons">
+     <button>{{ mcqs.answer1 }}</button>
+     <button>{{ mcqs.answer2 }}</button>
+     <button>{{ mcqs.answer3 }}</button>
+     <button>{{ mcqs.answer4 }}</button>
+    </div>
+
+</body>
+</html>

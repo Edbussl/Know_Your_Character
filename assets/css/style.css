@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor01: #663300;
+    --cor02: #f2f2f2;
+    --cor03: #0d0d0d;
+
+    --index: calc(1vw + 1vh);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: var(--cor03);
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid var(--cor02);
+    transition: all ease-out 5s;
+    cursor: pointer;
+    gap: 5px;
+    
+}
+
+.container img:hover{
+    flex-basis: auto;
+    flex-shrink: 3;
+    transform: scale(2.1);
+}
+
+body{
+    background-color: var(--cor01);
+}
