@@ -37,12 +37,13 @@ body{
     display: flex;
     align-items: center;
     border-radius: 10px;
-    border: 4px solid var(--cor04);
-    transition: all ease-out 5s;
+    border: 6px solid var(--cor04);
+    transition: ease-in-out;
+    transition-duration: 5s;
     cursor: pointer;
     gap: 5px;
     background: linear-gradient(0deg, rgba(102,51,0,1) 0%, rgba(102,51,0,1) 50%, rgba(156,124,93,1) 73%, rgba(242,242,242,1) 100%);
-    
+
 }
 
 
