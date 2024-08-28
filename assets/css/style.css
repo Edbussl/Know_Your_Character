@@ -8,47 +8,97 @@
     --cor02: #663300;
     --cor03: #f0b57d;
     --cor04: #f2f2f2;
-    --index: calc(1vw + 1vh);
-    --transition: cubic-bezier(.1, .7, 0, 1);
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
+    font-family: 'Roboto Mono', monospace;
     color: var(--cor04);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,51,0,1) 15%, rgba(240,181,125,1) 86%, rgba(242,242,242,1) 100%);
-    
 }
 
 .header {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 10px 20px;
     background-color: var(--cor01);
-    
+}
+
+.img-logo {
+    height: 50px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.header-menu-item {
+    color: var(--cor04);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-menu-item:hover {
+    color: var(--cor03);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle img {
+    height: 50px;
 }
 
 .container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     border-radius: 10px;
     border: 6px solid var(--cor04);
-    transition: ease-in-out;
-    transition-duration: 5s;
-    cursor: pointer;
-    gap: 5px;
     background: linear-gradient(0deg, rgba(102,51,0,1) 0%, rgba(102,51,0,1) 50%, rgba(156,124,93,1) 73%, rgba(242,242,242,1) 100%);
-
+    padding: 10px;
 }
 
+.universos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
 
-.container img:hover{
-    flex-basis: auto;
-    flex-shrink: 3;
-    transform: scale(2.1);
+.universos img:hover {
+    transform: scale(1.2);
+}
+
+footer.paginas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer.paginas button {
+    background-color: var(--cor02);
+    color: var(--cor04);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer.paginas button:hover {
+    background-color: var(--cor03);
 }
