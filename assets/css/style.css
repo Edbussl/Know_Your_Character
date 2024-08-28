@@ -71,9 +71,15 @@ body {
     padding: 10px;
 }
 
+.universos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
 .universos img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -101,4 +107,31 @@ footer.paginas button {
 
 footer.paginas button:hover {
     background-color: var(--cor03);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-menu {
+        font-size: 14px;
+    }
+
+    footer.paginas button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
