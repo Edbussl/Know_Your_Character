@@ -1,0 +1,100 @@
+/* Definição das cores com a nova paleta */
+:root {
+    --cor1: #451531; /* Cor de fundo principal (roxo escuro) */
+    --cor2: #FF3877; /* Cor de destaque (rosa forte) */
+    --cor3: #A5BEFA; /* Cor do texto (azul claro) */
+    --cor4: #B3093F; /* Cor dos cards (vermelho rosado) */
+    --cor5: rgba(0, 0, 0, 0.7); /* Fundo da descrição dos cards */
+    --cor6: #64B7CC; /* Nova cor adicionada para hover ou destaques */
+  }
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor1);
+    color: var(--cor3);
+  }
+  
+  /* Barra de navegação */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--cor1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--cor2);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar a {
+    color: var(--cor3);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: var(--cor2);
+  }
+  
+  /* Seção de filmes e séries */
+  .content {
+    padding: 2rem;
+  }
+  
+  .movie-series-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  /* Card */
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: var(--cor4);
+    cursor: pointer;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--cor5);
+    color: var(--cor3);
+    width: 100%;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .card-img {
+    transform: scale(1.1);
+  }
+  
+  .card:hover .card-info {
+    opacity: 1;
+    background-color: var(--cor6); /* Novo efeito hover com cor azul petróleo */
+  }
+  
